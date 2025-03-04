@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wi-Fi 비밀번호 생성 시스템</title>
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Wi-Fi 비밀번호 생성 시스템</h1>
+    </header>
+    <main>
+        <article>
+            <p>Wi-Fi 아이디 및 비밀번호는 아래와 같습니다.</p>
+            <div th:object="${account}">
+                <p>아이디 : <span th:text="*{username}"></span></p>
+                <p>비밀번호 : <span th:text="*{value}"></span></p>
+            </div>
+            <button onClick="location.href='/'" id="ButtonAfterConnection">연결 완료 후<br>이 버튼을 눌러주세요</button>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p>공공장소 이름</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+body > header {
+    margin: 100px 5px 50px 5px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+body > main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+body > main > article {
+    margin: 35px 10px;
+    /* 아래는 div 등 하위 항목의 가운데 정렬을 하기 위한 코드, Github Copilot을 활용해 생성 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body > main > article > p {
+    font-size: 25px;
+    margin: 15px 10px;
+}
+
+body > main > article > div{
+    margin: 25px;
+    border: 1px solid black;
+    width: 500px;
+    font-size: 35px;
+}
+
+body > main > article > div > p{
+    margin: 25px 10px;
+}
+
+body > main > article > button {
+    margin: 25px 10px;
+    font-size: 50px;
+    padding: 15px 10px;
+}
+
+body > main > article > #ButtonAfterConnection {
+    background-color: aqua;
+}
+
+body > footer {
+    margin: 25px 5px;
+}
